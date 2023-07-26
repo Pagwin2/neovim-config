@@ -18,3 +18,6 @@ vim.cmd("colorscheme gruvbox")
 
 ---- LSP stuff setup
 require("lsp")
+
+---- Treesitter setup
+require("plugins/treesitter")

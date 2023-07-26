@@ -18,9 +18,10 @@ local plugins = {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
     -- prisma syntax highlighting
-    "prisma/vim-prisma"
+    "prisma/vim-prisma",
+    -- treesitter for effieciency
+    {'nvim-treesitter/nvim-treesitter', build = ":TsUpdate"}
 }
 return plugins
 -- list of potential plugins to use in the future
 -- 'codota/tabnine-vim'
--- 'nvim-treesitter/nvim-treesitter'
