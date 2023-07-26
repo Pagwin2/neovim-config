@@ -1,6 +1,7 @@
+---- just lazy.nvim installation
 require("bootstrap")
 
----- base vim variable preferences
+---- base vim config preferences
 vim.opt.nu = true
 vim.opt.rnu = true
 vim.opt.wrap = true
