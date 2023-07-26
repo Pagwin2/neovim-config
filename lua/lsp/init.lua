@@ -1,7 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
 
-
 --- auto complete
 require("lsp/auto-complete")
 

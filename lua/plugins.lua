@@ -24,4 +24,3 @@ return plugins
 -- list of potential plugins to use in the future
 -- 'codota/tabnine-vim'
 -- 'nvim-treesitter/nvim-treesitter'
-
