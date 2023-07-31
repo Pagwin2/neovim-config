@@ -10,3 +10,4 @@ require("lspconfig").rust_analyzer.setup{}
 require("lspconfig").tsserver.setup{}
 require("lspconfig").prismals.setup{}
 require("lspconfig").omnisharp.setup{}
+require("lspconfig").jedi_language_server.setup{}
