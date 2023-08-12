@@ -20,7 +20,7 @@ local plugins = {
     -- prisma syntax highlighting
     --"prisma/vim-prisma",
     -- treesitter for highlighting
-    {'nvim-treesitter/nvim-treesitter', build = ":TsUpdate"},
+    {'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
     -- misc
     'mbbill/undotree'
 }
