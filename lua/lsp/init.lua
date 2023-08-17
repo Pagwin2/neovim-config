@@ -14,3 +14,4 @@ require("lspconfig").jedi_language_server.setup{}
 require("lspconfig").html.setup{}
 require("lspconfig").jdtls.setup{}
 require("lspconfig").pyright.setup{}
+require("lspconfig").texlab.setup{}
