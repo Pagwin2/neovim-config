@@ -26,6 +26,7 @@ vim.keymap.set("n", "<leader><F5>", vim.cmd.UndotreeToggle)
 --- clipboard convenience
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({"n", "v"}, "<leader>p", [["_p]])
 
 ---- clear search highlight easily
 vim.keymap.set("n", "<leader><ESC>", ":noh<CR>")

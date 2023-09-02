@@ -15,3 +15,4 @@ require("lspconfig").html.setup{}
 require("lspconfig").jdtls.setup{}
 require("lspconfig").pyright.setup{}
 require("lspconfig").texlab.setup{}
+require("lspconfig").gopls.setup{}

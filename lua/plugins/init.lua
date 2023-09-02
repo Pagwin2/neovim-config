@@ -17,12 +17,23 @@ local plugins = {
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
-    -- prisma syntax highlighting
-    --"prisma/vim-prisma",
     -- treesitter for highlighting
     {'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
     -- misc
-    'mbbill/undotree'
+    -- read the plugin name
+    'mbbill/undotree',
+    -- looks cool but not worth the sanity cost to get highlighting working rn
+    --{
+    --  "folke/todo-comments.nvim",
+    --  dependencies = { "nvim-lua/plenary.nvim" },
+    --  opts = {
+    --  }
+    --},
+    -- More convenient that leaving vim for git commands
+    'tpope/vim-fugitive',
+    -- Github extension to the above
+    'tpope/vim-rhubarb',
+    'tpope/vim-dadbod'
 }
 return plugins
 -- list of potential plugins to use in the future
