@@ -33,7 +33,9 @@ local plugins = {
     'tpope/vim-fugitive',
     -- Github extension to the above
     'tpope/vim-rhubarb',
+    -- DB client(might expand to more plugins in future)
     'tpope/vim-dadbod'
+    -- Consider telescope
 }
 return plugins
 -- list of potential plugins to use in the future

@@ -16,3 +16,5 @@ require("lspconfig").jdtls.setup{}
 require("lspconfig").pyright.setup{}
 require("lspconfig").texlab.setup{}
 require("lspconfig").gopls.setup{}
+require("lspconfig").dockerls.setup{}
+require("lspconfig").docker_compose_language_service.setup{}
