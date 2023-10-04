@@ -17,6 +17,8 @@ local plugins = {
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
+    -- lsp hint(s)
+    'simrat39/inlay-hints.nvim',
     -- treesitter for highlighting
     {'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
     -- misc
@@ -34,7 +36,9 @@ local plugins = {
     -- Github extension to the above
     'tpope/vim-rhubarb',
     -- DB client(might expand to more plugins in future)
-    'tpope/vim-dadbod'
+    'tpope/vim-dadbod',
+    -- bottom bar
+    'vim-airline/vim-airline',
     -- Consider telescope
 }
 return plugins

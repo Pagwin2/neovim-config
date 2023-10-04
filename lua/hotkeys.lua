@@ -30,3 +30,4 @@ vim.keymap.set({"n", "v"}, "<leader>p", [["_p]])
 
 ---- clear search highlight easily
 vim.keymap.set("n", "<leader><ESC>", ":noh<CR>")
+
