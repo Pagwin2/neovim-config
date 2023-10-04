@@ -3,6 +3,8 @@ require("mason-lspconfig").setup()
 
 --- auto complete
 require("lsp/auto-complete")
+-- hints
+require("lsp/hints")
 
 local lspconfig = require("lspconfig")
 
