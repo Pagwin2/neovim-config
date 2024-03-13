@@ -5,7 +5,13 @@ require("bootstrap")
 vim.opt.nu = true
 vim.opt.rnu = true
 vim.opt.wrap = true
+
 vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.tabstop = 8
+vim.softtabstop = 0
+vim.opt.expandtab = true;
+
 vim.opt.mouse = ""
 --- backup file prefs
 vim.opt.swapfile = false
