@@ -31,3 +31,6 @@ vim.keymap.set({"n", "v"}, "<leader>p", [["_p]])
 ---- clear search highlight easily
 vim.keymap.set("n", "<leader><ESC>", ":noh<CR>")
 
+---- format current project
+local on_format = require("formatting")
+vim.keymap.set("n", "<leader>f", on_format)

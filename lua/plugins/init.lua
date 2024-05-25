@@ -39,6 +39,14 @@ local plugins = {
     'tpope/vim-dadbod',
     -- bottom bar
     'vim-airline/vim-airline',
+    -- lua rocks make things easier
+    {
+      "vhyrro/luarocks.nvim",
+      priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+      opts = {
+            rocks = {"luafilesystem"},
+      },
+    },
     -- Consider telescope
 }
 return plugins

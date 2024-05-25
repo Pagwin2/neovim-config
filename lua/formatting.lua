@@ -1,0 +1,53 @@
+--local lfs = require("luafilesystem")
+--
+--
+--local function mysplit (inputstr, sep)
+--        if sep == nil then
+--                sep = "%s"
+--        end
+--        local t={}
+--        for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+--                table.insert(t, str)
+--        end
+--        return t
+--end
+--
+--
+--local function prettier_root_dirs()
+--    local root_dirs = vim.lsp.buf.list_workspace_folders()
+--    -- easiest way to append elements to a list
+--    local i = 1
+--    local ret = {}
+--
+--    for dir in root_dirs do
+--        local dir_obj = lfs.dir(dir)
+--        local file = dir_obj:next()
+--        while file ~= nil do
+--            local list = mysplit(file,"/")
+--            local config_files = {"package.json"}
+--            local yes = false
+--            for cfg in config_files do
+--                if cfg == list[#list] then
+--                    yes = true
+--                    break
+--                end
+--            end
+--            if yes then
+--                ret[i] = dir
+--                i = i + 1
+--                break
+--            end
+--            file = dir_obj:next()
+--        end
+--    end
+--    return ret
+--end
+
+
+---- this function will be run whenever a file is formatted
+return function()
+--    local dirs = prettier_root_dirs()
+--    for dir in dirs do
+--        os.execute("prettier " .. dir)
+--    end
+end
