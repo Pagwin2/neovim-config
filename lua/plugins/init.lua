@@ -1,5 +1,5 @@
 local plugins = {
-    --theme 
+    --theme
     "morhetz/gruvbox",
     --snippets stuff
     "SirVer/ultisnips",
@@ -20,7 +20,7 @@ local plugins = {
     -- lsp hint(s)
     'simrat39/inlay-hints.nvim',
     -- treesitter for highlighting
-    {'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
+    { 'nvim-treesitter/nvim-treesitter', build = ":TSUpdate" },
     -- misc
     -- read the plugin name
     'mbbill/undotree',
@@ -40,13 +40,21 @@ local plugins = {
     -- bottom bar
     'vim-airline/vim-airline',
     -- lua rocks make things easier
+    --{
+    --  "vhyrro/luarocks.nvim",
+    --  priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+    --  opts = {
+    --        rocks = {"luafilesystem"},
+    --  },
+    --},
+    -- telescope for various things
+    "nvim-telescope/telescope.nvim",
+    -- sshfs for remote dev (config based on github)
     {
-      "vhyrro/luarocks.nvim",
-      priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
-      opts = {
-            rocks = {"luafilesystem"},
-      },
-    },
+        "nosduco/remote-sshfs.nvim",
+        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+        opts = {},
+    }
     -- Consider telescope
 }
 return plugins

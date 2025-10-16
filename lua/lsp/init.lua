@@ -6,7 +6,10 @@ require("lsp/auto-complete")
 -- hints
 require("lsp/hints")
 
+require("lsp/auto-format")
+
 vim.lsp.enable("clangd")
+
 vim.lsp.enable("dockerls")
 vim.lsp.enable("docker_compose_language_service")
 vim.lsp.enable("elixirls")
@@ -27,5 +30,6 @@ vim.lsp.enable("pyright")
 vim.lsp.enable("r_language_server")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("texlab")
-vim.lsp.enable("tsserver")
+vim.lsp.enable("ts_ls")
+vim.lsp.enable("tinymist")
 vim.lsp.enable("zls")
