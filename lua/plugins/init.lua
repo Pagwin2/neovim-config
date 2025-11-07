@@ -3,7 +3,7 @@ local plugins = {
     "morhetz/gruvbox",
     --snippets stuff
     "SirVer/ultisnips",
-    "git@github.com:Pagwin-Fedora/vim-snippets.git",
+    "git@github.com:Pagwin2/vim-snippets.git",
     --for sudowrite
     "tpope/vim-eunuch",
     --lsp management
@@ -55,7 +55,6 @@ local plugins = {
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
         opts = {},
     }
-    -- Consider telescope
 }
 return plugins
 -- list of potential plugins to use in the future
