@@ -49,12 +49,14 @@ local plugins = {
     --},
     -- telescope for various things
     "nvim-telescope/telescope.nvim",
+    -- See function being edited at top and whatever else
+    "nvim-treesitter/nvim-treesitter-context"
     -- sshfs for remote dev (config based on github)
-    {
-        "nosduco/remote-sshfs.nvim",
-        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-        opts = {},
-    }
+    --{
+    --    "nosduco/remote-sshfs.nvim",
+    --    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    --    opts = {},
+    --}
 }
 return plugins
 -- list of potential plugins to use in the future
