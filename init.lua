@@ -33,3 +33,6 @@ require("lsp")
 
 ---- Treesitter setup
 require("plugins/treesitter")
+
+-- commands
+require("commands")
