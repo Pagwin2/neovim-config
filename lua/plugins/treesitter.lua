@@ -44,3 +44,9 @@ require 'nvim-treesitter.configs'.setup {
 
 vim.treesitter.language.add('llvm', { 'll' })
 vim.treesitter.language.add('djot', { 'dj', 'djot' })
+vim.filetype.add({
+    extension = {
+        dj = "djot",
+        djot = "djot",
+    },
+})
