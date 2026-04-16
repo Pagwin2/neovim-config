@@ -32,7 +32,7 @@ vim.cmd("colorscheme gruvbox")
 require("lsp")
 
 ---- Treesitter setup
-require("plugins/treesitter")
+require("treesitter")
 
 -- commands
 require("commands")

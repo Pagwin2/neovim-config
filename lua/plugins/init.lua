@@ -19,8 +19,6 @@ local plugins = {
     'hrsh7th/nvim-cmp',
     -- lsp hint(s)
     'simrat39/inlay-hints.nvim',
-    -- treesitter for highlighting
-    { 'nvim-treesitter/nvim-treesitter', build = ":TSUpdate" },
     -- misc
     -- read the plugin name
     'mbbill/undotree',
@@ -49,6 +47,13 @@ local plugins = {
     --},
     -- telescope for various things
     "nvim-telescope/telescope.nvim",
+    {
+        "romus204/tree-sitter-manager.nvim",
+        opts = {
+            ensure_installed = { "c", "lua", "vim", "vimdoc", "rust", "typescript", "javascript", "elixir", "erlang", "gitcommit", "gitignore", "html", "julia", "diff", "latex", "git_rebase", "markdown", "make", "cmake", "python", "toml", "yaml", "zig", "csv", "llvm", "djot" },
+            auto_install = true, -- Install missing ones on the fly
+        },
+    },
     -- See function being edited at top and whatever else
     "nvim-treesitter/nvim-treesitter-context"
     -- sshfs for remote dev (config based on github)
